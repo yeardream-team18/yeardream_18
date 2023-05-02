@@ -3,6 +3,8 @@ import random
 def select_door():
     """
     Randomly selects a door number between 1 and 3.
+    input type: no input
+    value type: random integer from 1 to 3
     """
     return random.randint(1, 3)
 
@@ -16,6 +18,8 @@ def reveal_goat_door(car_door, selected_door):
 
     Returns:
     - goat_door (int): The door number revealed to the player that contains a goat.
+    input type: integer, door number
+    value type: integer, goat_door; from 1 to 3
     """
     doors = [1, 2, 3]
     if car_door == selected_door:
